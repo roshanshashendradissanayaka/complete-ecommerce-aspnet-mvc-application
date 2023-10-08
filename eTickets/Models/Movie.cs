@@ -10,7 +10,7 @@ namespace eTickets.Models
         public int Id { get; set; }
         public String Name { get; set; }
         public String Description { get; set; }
-        public String Price { get; set; }
+        public double Price { get; set; }
         public String ImageURL { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
