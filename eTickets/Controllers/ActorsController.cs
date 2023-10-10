@@ -23,6 +23,8 @@ namespace eTickets.Controllers
         {
             var allActors = await _context.Actors.ToListAsync();
             return View(allActors);
+            //by default this will send the call to index view, if you want to send to a specific view the do the below.
+            //return view("viewnamethatyouwant",allActors);
         }
     }
 }
