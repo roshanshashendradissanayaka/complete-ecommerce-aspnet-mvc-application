@@ -12,7 +12,7 @@ using eTickets.Data;
 namespace eTickets.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230925174427_Initial")]
+    [Migration("20231010160504_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -119,9 +119,8 @@ namespace eTickets.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Price")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<int>("ProducerId")
                         .HasColumnType("int");

@@ -1,10 +1,10 @@
 ﻿@*Define model*@
-@model IEnumerable<Actor>
+@model IEnumerable<Producer>
 
 
 @*Define data*@
 @{
-    ViewData["Title"] = "List Of Actors";
+    ViewData["Title"] = "List Of Producers";
 }
 
 @*Write Code*@
@@ -13,7 +13,7 @@
     <div class="col-md-8 offset-md-2">
         <table class="table">
             <thead>
-                 <tr class="text-center">
+                <tr class="text-center">
                     <th>@Html.DisplayNameFor(model => model.ProfilePictureURL)</th>
                     <th>@Html.DisplayNameFor(model => model.FullName)</th>
                     <th>@Html.DisplayNameFor(model => model.Bio)</th>
